@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "primaveraWebApi", "primaveraWebApi\primaveraWebApi.csproj", "{49DAC3DD-593F-48E1-B745-BFEE9EE98944}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49DAC3DD-593F-48E1-B745-BFEE9EE98944}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49DAC3DD-593F-48E1-B745-BFEE9EE98944}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49DAC3DD-593F-48E1-B745-BFEE9EE98944}.Debug|x86.ActiveCfg = Debug|x86
+		{49DAC3DD-593F-48E1-B745-BFEE9EE98944}.Debug|x86.Build.0 = Debug|x86
+		{49DAC3DD-593F-48E1-B745-BFEE9EE98944}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49DAC3DD-593F-48E1-B745-BFEE9EE98944}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49DAC3DD-593F-48E1-B745-BFEE9EE98944}.Release|x86.ActiveCfg = Release|x86
+		{49DAC3DD-593F-48E1-B745-BFEE9EE98944}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {40BEDE58-A15F-401E-B046-ADC3FEF563CA}
+	EndGlobalSection
+EndGlobal
