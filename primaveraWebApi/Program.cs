@@ -1,5 +1,6 @@
 ﻿
 using Topshelf;
+using primaveraApi.load;
 namespace primaveraWebApi
 {
     class Program
@@ -15,6 +16,9 @@ namespace primaveraWebApi
                     s.ConstructUsing(name => new Webserver());
                     s.WhenStarted(tc => tc.Start());
                     s.WhenStopped(tc => tc.Stop());
+                    Init.TabelaUtilizador();
+                    Init.TabelaEncomenda();
+                    Init.TabelaItemEncomenda();
 
                 });
                 x.RunAsLocalSystem();

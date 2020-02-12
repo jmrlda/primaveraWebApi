@@ -33,11 +33,12 @@ namespace primaveraWebApi
         // POST api/artigo
         public void Post([FromBody] String value)
         {
-
+            Console.WriteLine("value");
+            Console.WriteLine(value);
         }
 
         // PUT api/artigo/id
-        public void put(int id, [FromBody]string value)
+        public void Put(int id, [FromBody]string value)
         {
 
         }

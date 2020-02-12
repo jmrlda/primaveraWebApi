@@ -11,33 +11,39 @@ namespace primaveraWebApi
 {
     public class EncomendaController : ApiController
     {
-        // Get api/teste
+        // Get api/encomenda
         public List<Encomenda> Get()
-        {
+        {   
             EncomendaCRUD clienteCrud = new EncomendaCRUD();
             List<Encomenda> listaEncomenda = clienteCrud.read();
             return listaEncomenda;
         }
 
-        // Get api/artigo/id
+        // Get api/encomenda/id
         public IEnumerable<String> Get(int id)
         {
             return new string[] { "ola", "mundo" };
         }
 
-        // POST api/artigo
-        public void Post([FromBody] String value)
+        // POST api/encomenda
+        [HttpPost]
+        public bool Post([FromBody]  Encomenda encomenda)
         {
+            Console.WriteLine("Post Encomenda");
+            EncomendaCRUD encomendaCRUD = new EncomendaCRUD();
+            bool rv = encomendaCRUD.create(encomenda);
 
+            return rv;
+          
         }
 
-        // PUT api/artigo/id
+        // PUT api/encomenda/id
         public void put(int id, [FromBody]string value)
         {
 
         }
 
-        //DELETE api/artigo/id
+        //DELETE api/encomenda/id
         public void Delete(int id )
         {
 
