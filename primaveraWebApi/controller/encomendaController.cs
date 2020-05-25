@@ -34,7 +34,7 @@ namespace primaveraWebApi
             EncomendaCRUD encomendaCRUD = new EncomendaCRUD();
             bool rv = encomendaCRUD.create(encomenda);
             String resultado;
-            if ( rv = true )
+            if ( rv == true )
             {
                 resultado = "sucesso";
             } else
