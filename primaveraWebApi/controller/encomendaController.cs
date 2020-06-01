@@ -14,17 +14,18 @@ namespace primaveraWebApi
         // Get api/encomenda
         public List<Encomenda> Get()
         {
-            EncomendaCRUD clienteCrud = new EncomendaCRUD();
-            List<Encomenda> listaEncomenda = clienteCrud.read();
+            EncomendaCRUD encomendaCrud = new EncomendaCRUD();
+            List<Encomenda> listaEncomenda = encomendaCrud.read();
             return listaEncomenda;
         }
 
         // Get api/encomenda/id
-        public IEnumerable<String> Get(int id)
+        public List<Encomenda> Get(String id)
         {
-            return new string[] { "ola", "mundo" };
+            EncomendaCRUD encomendaCrud = new EncomendaCRUD();
+            List<Encomenda> listaEncomenda = encomendaCrud.readByVendedor(id);
+            return listaEncomenda;
         }
-
         // POST api/encomenda
         public String Post(Encomenda encomenda)
         {
